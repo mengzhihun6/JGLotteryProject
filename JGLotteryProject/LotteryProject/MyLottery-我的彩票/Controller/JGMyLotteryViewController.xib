@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGMyLotteryViewController">
+            <connections>
+                <outlet property="loginBtn" destination="eZj-Bg-bKP" id="ouM-rO-F5Z"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gjq-kA-9iT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-Bg-mA5">
+                    <rect key="frame" x="70" y="40" width="460" height="205"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-Bg-bKP">
+                    <rect key="frame" x="50" y="365" width="500" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6Wf-6q-FhS"/>
+                    </constraints>
+                    <state key="normal" title="登  录" backgroundImage="RedButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eZj-Bg-bKP" firstAttribute="top" secondItem="Rvh-Bg-mA5" secondAttribute="bottom" constant="120" id="3W0-5S-l8f"/>
+                <constraint firstItem="eZj-Bg-bKP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="6XO-OB-oYI"/>
+                <constraint firstItem="eZj-Bg-bKP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Zz-2l-1Bc"/>
+                <constraint firstItem="Rvh-Bg-mA5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="FzI-Mx-fwd"/>
+                <constraint firstAttribute="trailing" secondItem="eZj-Bg-bKP" secondAttribute="trailing" constant="50" id="ML3-WY-VTf"/>
+                <constraint firstAttribute="bottom" secondItem="eZj-Bg-bKP" secondAttribute="bottom" constant="200" id="dkR-vh-jdh"/>
+                <constraint firstItem="Rvh-Bg-mA5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="pBr-me-Lyb"/>
+                <constraint firstItem="Rvh-Bg-mA5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tdi-28-uXT"/>
+                <constraint firstAttribute="trailing" secondItem="Rvh-Bg-mA5" secondAttribute="trailing" constant="70" id="ujb-JT-Hq4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="RedButton" width="61" height="34"/>
+    </resources>
+</document>
